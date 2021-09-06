@@ -17,7 +17,7 @@ public class FirebaseInitialize {
                     new FileInputStream("./randevu-db-firebase-adminsdk-m0ngz-593727589d.json");
             FirebaseOptions options = new FirebaseOptions.Builder()
                     .setCredentials(GoogleCredentials.fromStream(serviceAccount))
-                    .setDatabaseUrl("https://chatapp-e6e15.firebaseio.com")
+                    .setDatabaseUrl("https://randevu-db-default-rtdb.firebaseio.com/")
                     .build();
             FirebaseApp.initializeApp(options);
         } catch (Exception e) {
